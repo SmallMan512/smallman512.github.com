@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>DIV+CSS布局(小满)</title>
+    <link rel="stylesheet" type="text/css" href="style/header.css"/>
+    <link rel="stylesheet" type="text/css" href="style/center.css"/>
+    <link rel="stylesheet" type="text/css" href="style/footer.css"/>
+    <script src="script/jquery-1.11.3.min.js"></script>
+    <script src="script/jquery.js"></script>
+</head>
+<body>
+<div class="continue">
+    <div class="index">
+        <div class="header"><h1>华育国际教育培训机构</h1></div>
+        <div class="header2">
+            <ul class="cul">
+                <li>
+                    <a href="#">首页</a>
+                    <ul>
+                        <li><a href="#">A1</a></li>
+                        <li><a href="#">A2</a></li>
+                        <li><a href="#">A3</a></li>
+                        <li><a href="#">A4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">公司简介</a>
+                    <ul>
+                        <li><a href="#">B1</a></li>
+                        <li><a href="#">B2</a></li>
+                        <li><a href="#">B3</a></li>
+                        <li><a href="#">B4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">最新产品</a>
+                    <ul>
+                        <li><a href="#">C1</a></li>
+                        <li><a href="#">C2</a></li>
+                        <li><a href="#">C3</a></li>
+                        <li><a href="#">C4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">业务咨询</a>
+                    <ul>
+                        <li><a href="#">D1</a></li>
+                        <li><a href="#">D2</a></li>
+                        <li><a href="#">D3</a></li>
+                        <li><a href="#">D4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">联系我们</a>
+                    <ul>
+                        <li><a href="#">E1</a></li>
+                        <li><a href="#">E2</a></li>
+                        <li><a href="#">E3</a></li>
+                        <li><a href="#">E4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">留言</a>
+                    <ul>
+                        <li><a href="#">F1</a></li>
+                        <li><a href="#">F2</a></li>
+                        <li><a href="#">F3</a></li>
+                        <li><a href="#">F4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="center">
+        <div class="center_left">
+            <div class="center_left_1">
+                <img id="imgshow" src="image/1.jpg" style="width: 600px;height:500px"/>
+            </div>
+            <div class="center_left_bottom">
+                <ul class="lul">
+                <li class="one" onmousemove="demo('image/1.jpg')">1</li>
+                <li class="two" onmousemove="demo('image/2.jpg')">2</li>
+                <li class="three" onmousemove="demo('image/6.jpg')">3</li>
+                <li class="four"onmousemove="demo('image/bg.jpg')">4 </li>
+                </ul>
+            </div>
+        </div>
+        <div class="center_right">
+            <ul >
+                <li><img src="image/1.jpg" style="width: 240px;height:200px" onmousemove="demo('image/1.jpg')"/></li>
+                <li><img src="image/2.jpg" style="width: 240px;height:195px" onmousemove="demo('image/2.jpg')"/></li>
+                <li><img src="image/6.jpg" style="width: 240px;height:195px" onmousemove="demo('image/6.jpg')"/></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer"><p>关于本站 | 网站地图 | 联系我们 | 免责声明 | 友情链接</p>
+        <p> 京ICP备12039225号-1 QQ：65208658 QQ群：241355683</p>
+        <p> CopyRight © 2010-2014 jQeury中文网 jquerycn.cn , All Rights Reserved. </p></div>
+</div>
+<script type="text/javascript">
+    function demo(show){
+        document.getElementById("imgshow").src=show;
+        document.getElementById(".center_left_bottom li");
+        document.getElementsByTagName("li").style.color="#00ff00";
+
+    }
+</script>
+</body>
+</html>
